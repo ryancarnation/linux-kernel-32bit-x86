@@ -1,0 +1,2 @@
+cross-compiler/build-gcc/*
+cross-compiler/src/*.tar.xz
