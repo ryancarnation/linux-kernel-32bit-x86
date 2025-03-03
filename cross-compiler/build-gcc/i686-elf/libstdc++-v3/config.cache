@@ -1,0 +1,232 @@
+# This file is a shell script that caches the results of configure
+# tests run on this system so they can be shared between configure
+# scripts and configure runs, see configure's option --config-cache.
+# It is not useful on other systems.  If it contains results you don't
+# want to keep, you may remove or edit it.
+#
+# config.status only pays attention to the cache file if you give it
+# the --recheck option to rerun configure.
+#
+# `ac_cv_env_foo' variables (set or unset) will be overridden when
+# loading this file, other *unset* `ac_cv_foo' will be assigned the
+# following values.
+
+ac_cv_build=${ac_cv_build=x86_64-pc-linux-gnu}
+ac_cv_c_compiler_gnu=${ac_cv_c_compiler_gnu=yes}
+ac_cv_cxx_compiler_gnu=${ac_cv_cxx_compiler_gnu=yes}
+ac_cv_env_CCC_set=
+ac_cv_env_CCC_value=
+ac_cv_env_CC_set=set
+ac_cv_env_CC_value=' /home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/./gcc/xgcc -B/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/./gcc/ -B/home/rcarnation/opt/cross/i686-elf/bin/ -B/home/rcarnation/opt/cross/i686-elf/lib/ -isystem /home/rcarnation/opt/cross/i686-elf/include -isystem /home/rcarnation/opt/cross/i686-elf/sys-include   '
+ac_cv_env_CFLAGS_set=set
+ac_cv_env_CFLAGS_value='-g -O2'
+ac_cv_env_CPPFLAGS_set=set
+ac_cv_env_CPPFLAGS_value=
+ac_cv_env_CPP_set=
+ac_cv_env_CPP_value=
+ac_cv_env_CXXCPP_set=
+ac_cv_env_CXXCPP_value=
+ac_cv_env_CXXFILT_set=
+ac_cv_env_CXXFILT_value=
+ac_cv_env_CXXFLAGS_set=set
+ac_cv_env_CXXFLAGS_value='-g -O2'
+ac_cv_env_CXX_set=set
+ac_cv_env_CXX_value=' /home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/./gcc/xgcc -shared-libgcc -B/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/./gcc -nostdinc++ -L/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/i686-elf/libstdc++-v3/src -L/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/i686-elf/libstdc++-v3/src/.libs -L/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/i686-elf/libstdc++-v3/libsupc++/.libs -B/home/rcarnation/opt/cross/i686-elf/bin/ -B/home/rcarnation/opt/cross/i686-elf/lib/ -isystem /home/rcarnation/opt/cross/i686-elf/include -isystem /home/rcarnation/opt/cross/i686-elf/sys-include   '
+ac_cv_env_LDFLAGS_set=set
+ac_cv_env_LDFLAGS_value=
+ac_cv_env_LIBS_set=
+ac_cv_env_LIBS_value=
+ac_cv_env_build_alias_set=set
+ac_cv_env_build_alias_value=x86_64-pc-linux-gnu
+ac_cv_env_host_alias_set=set
+ac_cv_env_host_alias_value=i686-elf
+ac_cv_env_target_alias_set=set
+ac_cv_env_target_alias_value=i686-elf
+ac_cv_have_decl_F_GETFL=${ac_cv_have_decl_F_GETFL=no}
+ac_cv_have_decl_F_SETFL=${ac_cv_have_decl_F_SETFL=no}
+ac_cv_have_decl_strnlen=${ac_cv_have_decl_strnlen=no}
+ac_cv_header_arpa_inet_h=${ac_cv_header_arpa_inet_h=no}
+ac_cv_header_complex_h=${ac_cv_header_complex_h=no}
+ac_cv_header_dirent_h=${ac_cv_header_dirent_h=no}
+ac_cv_header_dlfcn_h=${ac_cv_header_dlfcn_h=no}
+ac_cv_header_endian_h=${ac_cv_header_endian_h=no}
+ac_cv_header_execinfo_h=${ac_cv_header_execinfo_h=no}
+ac_cv_header_fcntl_h=${ac_cv_header_fcntl_h=no}
+ac_cv_header_fenv_h=${ac_cv_header_fenv_h=no}
+ac_cv_header_float_h=${ac_cv_header_float_h=yes}
+ac_cv_header_fp_h=${ac_cv_header_fp_h=no}
+ac_cv_header_ieeefp_h=${ac_cv_header_ieeefp_h=no}
+ac_cv_header_inttypes_h=${ac_cv_header_inttypes_h=no}
+ac_cv_header_link_h=${ac_cv_header_link_h=no}
+ac_cv_header_linux_random_h=${ac_cv_header_linux_random_h=no}
+ac_cv_header_linux_types_h=${ac_cv_header_linux_types_h=no}
+ac_cv_header_locale_h=${ac_cv_header_locale_h=no}
+ac_cv_header_machine_endian_h=${ac_cv_header_machine_endian_h=no}
+ac_cv_header_machine_param_h=${ac_cv_header_machine_param_h=no}
+ac_cv_header_memory_h=${ac_cv_header_memory_h=no}
+ac_cv_header_nan_h=${ac_cv_header_nan_h=no}
+ac_cv_header_netdb_h=${ac_cv_header_netdb_h=no}
+ac_cv_header_netinet_in_h=${ac_cv_header_netinet_in_h=no}
+ac_cv_header_netinet_tcp_h=${ac_cv_header_netinet_tcp_h=no}
+ac_cv_header_poll_h=${ac_cv_header_poll_h=no}
+ac_cv_header_semaphore_h=${ac_cv_header_semaphore_h=no}
+ac_cv_header_stdalign_h=${ac_cv_header_stdalign_h=yes}
+ac_cv_header_stdbool_h=${ac_cv_header_stdbool_h=yes}
+ac_cv_header_stdc=${ac_cv_header_stdc=no}
+ac_cv_header_stdint_h=${ac_cv_header_stdint_h=no}
+ac_cv_header_stdlib_h=${ac_cv_header_stdlib_h=no}
+ac_cv_header_string_h=${ac_cv_header_string_h=no}
+ac_cv_header_strings_h=${ac_cv_header_strings_h=no}
+ac_cv_header_sys_filio_h=${ac_cv_header_sys_filio_h=no}
+ac_cv_header_sys_ioctl_h=${ac_cv_header_sys_ioctl_h=no}
+ac_cv_header_sys_ipc_h=${ac_cv_header_sys_ipc_h=no}
+ac_cv_header_sys_isa_defs_h=${ac_cv_header_sys_isa_defs_h=no}
+ac_cv_header_sys_machine_h=${ac_cv_header_sys_machine_h=no}
+ac_cv_header_sys_param_h=${ac_cv_header_sys_param_h=no}
+ac_cv_header_sys_resource_h=${ac_cv_header_sys_resource_h=no}
+ac_cv_header_sys_sem_h=${ac_cv_header_sys_sem_h=no}
+ac_cv_header_sys_socket_h=${ac_cv_header_sys_socket_h=no}
+ac_cv_header_sys_stat_h=${ac_cv_header_sys_stat_h=no}
+ac_cv_header_sys_statvfs_h=${ac_cv_header_sys_statvfs_h=no}
+ac_cv_header_sys_sysinfo_h=${ac_cv_header_sys_sysinfo_h=no}
+ac_cv_header_sys_time_h=${ac_cv_header_sys_time_h=no}
+ac_cv_header_sys_types_h=${ac_cv_header_sys_types_h=no}
+ac_cv_header_sys_uio_h=${ac_cv_header_sys_uio_h=no}
+ac_cv_header_tgmath_h=${ac_cv_header_tgmath_h=no}
+ac_cv_header_uchar_h=${ac_cv_header_uchar_h=no}
+ac_cv_header_unistd_h=${ac_cv_header_unistd_h=no}
+ac_cv_header_utime_h=${ac_cv_header_utime_h=no}
+ac_cv_header_wchar_h=${ac_cv_header_wchar_h=no}
+ac_cv_header_wctype_h=${ac_cv_header_wctype_h=no}
+ac_cv_header_windows_h=${ac_cv_header_windows_h=no}
+ac_cv_header_xlocale_h=${ac_cv_header_xlocale_h=no}
+ac_cv_host=${ac_cv_host=i686-pc-elf}
+ac_cv_objext=${ac_cv_objext=o}
+ac_cv_path_CXXFILT=${ac_cv_path_CXXFILT=/usr/bin/c++filt}
+ac_cv_path_EGREP=${ac_cv_path_EGREP='/usr/bin/grep -E'}
+ac_cv_path_FGREP=${ac_cv_path_FGREP='/usr/bin/grep -F'}
+ac_cv_path_GREP=${ac_cv_path_GREP=/usr/bin/grep}
+ac_cv_path_SED=${ac_cv_path_SED=/usr/bin/sed}
+ac_cv_path_install=${ac_cv_path_install='/usr/bin/install -c'}
+ac_cv_path_mkdir=${ac_cv_path_mkdir=/usr/bin/mkdir}
+ac_cv_prog_AR=${ac_cv_prog_AR=/home/rcarnation/opt/cross/i686-elf/bin/ar}
+ac_cv_prog_AS=${ac_cv_prog_AS=/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/./gcc/as}
+ac_cv_prog_AWK=${ac_cv_prog_AWK=gawk}
+ac_cv_prog_CC=${ac_cv_prog_CC=' /home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/./gcc/xgcc -B/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/./gcc/ -B/home/rcarnation/opt/cross/i686-elf/bin/ -B/home/rcarnation/opt/cross/i686-elf/lib/ -isystem /home/rcarnation/opt/cross/i686-elf/include -isystem /home/rcarnation/opt/cross/i686-elf/sys-include   '}
+ac_cv_prog_CPP=${ac_cv_prog_CPP=' /home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/./gcc/xgcc -B/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/./gcc/ -B/home/rcarnation/opt/cross/i686-elf/bin/ -B/home/rcarnation/opt/cross/i686-elf/lib/ -isystem /home/rcarnation/opt/cross/i686-elf/include -isystem /home/rcarnation/opt/cross/i686-elf/sys-include    -E'}
+ac_cv_prog_CXXCPP=${ac_cv_prog_CXXCPP=' /home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/./gcc/xgcc -shared-libgcc -B/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/./gcc -nostdinc++ -L/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/i686-elf/libstdc++-v3/src -L/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/i686-elf/libstdc++-v3/src/.libs -L/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/i686-elf/libstdc++-v3/libsupc++/.libs -B/home/rcarnation/opt/cross/i686-elf/bin/ -B/home/rcarnation/opt/cross/i686-elf/lib/ -isystem /home/rcarnation/opt/cross/i686-elf/include -isystem /home/rcarnation/opt/cross/i686-elf/sys-include    -E'}
+ac_cv_prog_DBLATEX=${ac_cv_prog_DBLATEX=no}
+ac_cv_prog_DOT=${ac_cv_prog_DOT=no}
+ac_cv_prog_DOXYGEN=${ac_cv_prog_DOXYGEN=no}
+ac_cv_prog_MAKEINFO=${ac_cv_prog_MAKEINFO=makeinfo}
+ac_cv_prog_OBJDUMP=${ac_cv_prog_OBJDUMP=/home/rcarnation/opt/cross/i686-elf/bin/objdump}
+ac_cv_prog_PDFLATEX=${ac_cv_prog_PDFLATEX=no}
+ac_cv_prog_RANLIB=${ac_cv_prog_RANLIB=/home/rcarnation/opt/cross/i686-elf/bin/ranlib}
+ac_cv_prog_STRIP=${ac_cv_prog_STRIP=/home/rcarnation/opt/cross/i686-elf/bin/strip}
+ac_cv_prog_XMLCATALOG=${ac_cv_prog_XMLCATALOG=no}
+ac_cv_prog_XMLLINT=${ac_cv_prog_XMLLINT=no}
+ac_cv_prog_XSLTPROC=${ac_cv_prog_XSLTPROC=no}
+ac_cv_prog_cc_c89=${ac_cv_prog_cc_c89=no}
+ac_cv_prog_cc_g=${ac_cv_prog_cc_g=yes}
+ac_cv_prog_cxx_g=${ac_cv_prog_cxx_g=yes}
+ac_cv_prog_make_make_set=${ac_cv_prog_make_make_set=yes}
+ac_cv_sys_file_offset_bits=${ac_cv_sys_file_offset_bits=unknown}
+ac_cv_sys_large_files=${ac_cv_sys_large_files=unknown}
+ac_cv_sys_largefile_CC=${ac_cv_sys_largefile_CC=no}
+ac_cv_target=${ac_cv_target=i686-pc-elf}
+ac_cv_x86_rdrand=${ac_cv_x86_rdrand=yes}
+ac_cv_x86_rdseed=${ac_cv_x86_rdseed=yes}
+am_cv_make_support_nested_variables=${am_cv_make_support_nested_variables=yes}
+am_cv_prog_cc_c_o=${am_cv_prog_cc_c_o=yes}
+gcc_cv_prog_makeinfo_modern=${gcc_cv_prog_makeinfo_modern=yes}
+glibcxx_cv_GET_NPROCS=${glibcxx_cv_GET_NPROCS=no}
+glibcxx_cv_LFS=${glibcxx_cv_LFS=no}
+glibcxx_cv_POLL=${glibcxx_cv_POLL=no}
+glibcxx_cv_PTHREADS_NUM_PROCESSORS_NP=${glibcxx_cv_PTHREADS_NUM_PROCESSORS_NP=no}
+glibcxx_cv_PTHREAD_COND_CLOCKWAIT=${glibcxx_cv_PTHREAD_COND_CLOCKWAIT=no}
+glibcxx_cv_PTHREAD_MUTEX_CLOCKLOCK=${glibcxx_cv_PTHREAD_MUTEX_CLOCKLOCK=no}
+glibcxx_cv_PTHREAD_RWLOCK_CLOCKLOCK=${glibcxx_cv_PTHREAD_RWLOCK_CLOCKLOCK=no}
+glibcxx_cv_SC_NPROCESSORS_ONLN=${glibcxx_cv_SC_NPROCESSORS_ONLN=no}
+glibcxx_cv_SC_NPROC_ONLN=${glibcxx_cv_SC_NPROC_ONLN=no}
+glibcxx_cv_SYSCTL_HW_NCPU=${glibcxx_cv_SYSCTL_HW_NCPU=no}
+glibcxx_cv_S_IFREG=${glibcxx_cv_S_IFREG=no}
+glibcxx_cv_S_ISREG=${glibcxx_cv_S_ISREG=no}
+glibcxx_cv_TMPNAM=${glibcxx_cv_TMPNAM=no}
+glibcxx_cv_WRITEV=${glibcxx_cv_WRITEV=no}
+glibcxx_cv_arc4random=${glibcxx_cv_arc4random=no}
+glibcxx_cv_at_least_32bit=${glibcxx_cv_at_least_32bit=1}
+glibcxx_cv_atomic_bool=${glibcxx_cv_atomic_bool=yes}
+glibcxx_cv_atomic_int=${glibcxx_cv_atomic_int=yes}
+glibcxx_cv_atomic_long_long=${glibcxx_cv_atomic_long_long=yes}
+glibcxx_cv_atomic_short=${glibcxx_cv_atomic_short=yes}
+glibcxx_cv_c99_ctype=${glibcxx_cv_c99_ctype=no}
+glibcxx_cv_c99_ctype_tr1=${glibcxx_cv_c99_ctype_tr1=no}
+glibcxx_cv_c99_flt_eval_types=${glibcxx_cv_c99_flt_eval_types=no}
+glibcxx_cv_c99_math_cxx11=${glibcxx_cv_c99_math_cxx11=no}
+glibcxx_cv_c99_math_cxx98=${glibcxx_cv_c99_math_cxx98=no}
+glibcxx_cv_c99_math_funcs=${glibcxx_cv_c99_math_funcs=no}
+glibcxx_cv_c99_math_tr1=${glibcxx_cv_c99_math_tr1=no}
+glibcxx_cv_c99_stdint=${glibcxx_cv_c99_stdint=no}
+glibcxx_cv_c99_stdint_tr1=${glibcxx_cv_c99_stdint_tr1=no}
+glibcxx_cv_c99_stdio_cxx11=${glibcxx_cv_c99_stdio_cxx11=no}
+glibcxx_cv_c99_stdio_cxx98=${glibcxx_cv_c99_stdio_cxx98=no}
+glibcxx_cv_c99_stdlib_cxx11=${glibcxx_cv_c99_stdlib_cxx11=no}
+glibcxx_cv_c99_stdlib_cxx98=${glibcxx_cv_c99_stdlib_cxx98=no}
+glibcxx_cv_chdir=${glibcxx_cv_chdir=no}
+glibcxx_cv_chmod=${glibcxx_cv_chmod=no}
+glibcxx_cv_copy_file_range=${glibcxx_cv_copy_file_range=no}
+glibcxx_cv_dirent_d_type=${glibcxx_cv_dirent_d_type=no}
+glibcxx_cv_dirfd=${glibcxx_cv_dirfd=no}
+glibcxx_cv_fchmod=${glibcxx_cv_fchmod=no}
+glibcxx_cv_fchmodat=${glibcxx_cv_fchmodat=no}
+glibcxx_cv_fdopendir=${glibcxx_cv_fdopendir=no}
+glibcxx_cv_getcwd=${glibcxx_cv_getcwd=no}
+glibcxx_cv_getentropy=${glibcxx_cv_getentropy=no}
+glibcxx_cv_gets=${glibcxx_cv_gets=no}
+glibcxx_cv_have_as_symver_directive=${glibcxx_cv_have_as_symver_directive=yes}
+glibcxx_cv_have_attribute_visibility=${glibcxx_cv_have_attribute_visibility=yes}
+glibcxx_cv_link=${glibcxx_cv_link=no}
+glibcxx_cv_lseek=${glibcxx_cv_lseek=no}
+glibcxx_cv_lstat=${glibcxx_cv_lstat=no}
+glibcxx_cv_mkdir=${glibcxx_cv_mkdir=no}
+glibcxx_cv_obsolete_isinf=${glibcxx_cv_obsolete_isinf=no}
+glibcxx_cv_obsolete_isnan=${glibcxx_cv_obsolete_isnan=no}
+glibcxx_cv_openat=${glibcxx_cv_openat=no}
+glibcxx_cv_posix_lfs=${glibcxx_cv_posix_lfs=no}
+glibcxx_cv_readlink=${glibcxx_cv_readlink=no}
+glibcxx_cv_realpath=${glibcxx_cv_realpath=no}
+glibcxx_cv_sendfile=${glibcxx_cv_sendfile=no}
+glibcxx_cv_size_t_mangling=${glibcxx_cv_size_t_mangling=m}
+glibcxx_cv_st_mtim=${glibcxx_cv_st_mtim=no}
+glibcxx_cv_symlink=${glibcxx_cv_symlink=no}
+glibcxx_cv_sys_filetype=${glibcxx_cv_sys_filetype=elf32}
+glibcxx_cv_sys_sdt_h=${glibcxx_cv_sys_sdt_h=no}
+glibcxx_cv_sys_sync=${glibcxx_cv_sys_sync=yes}
+glibcxx_cv_truncate=${glibcxx_cv_truncate=no}
+glibcxx_cv_unlinkat=${glibcxx_cv_unlinkat=no}
+glibcxx_cv_utime=${glibcxx_cv_utime=no}
+glibcxx_cv_utimensat=${glibcxx_cv_utimensat=no}
+lt_cv_archive_cmds_need_lc=${lt_cv_archive_cmds_need_lc=yes}
+lt_cv_deplibs_check_method=${lt_cv_deplibs_check_method=unknown}
+lt_cv_file_magic_cmd=${lt_cv_file_magic_cmd='$MAGIC_CMD'}
+lt_cv_file_magic_test_file=${lt_cv_file_magic_test_file=}
+lt_cv_ld_reload_flag=${lt_cv_ld_reload_flag=-r}
+lt_cv_nm_interface=${lt_cv_nm_interface='BSD nm'}
+lt_cv_objdir=${lt_cv_objdir=.libs}
+lt_cv_path_LD=${lt_cv_path_LD=/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/./gcc/collect-ld}
+lt_cv_path_LDCXX=${lt_cv_path_LDCXX=/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/./gcc/collect-ld}
+lt_cv_path_NM=${lt_cv_path_NM='/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/./gcc/nm -B'}
+lt_cv_prog_compiler_c_o=${lt_cv_prog_compiler_c_o=yes}
+lt_cv_prog_compiler_c_o_CXX=${lt_cv_prog_compiler_c_o_CXX=yes}
+lt_cv_prog_compiler_pic_works=${lt_cv_prog_compiler_pic_works=yes}
+lt_cv_prog_compiler_pic_works_CXX=${lt_cv_prog_compiler_pic_works_CXX=yes}
+lt_cv_prog_compiler_rtti_exceptions=${lt_cv_prog_compiler_rtti_exceptions=no}
+lt_cv_prog_compiler_static_works=${lt_cv_prog_compiler_static_works=no}
+lt_cv_prog_compiler_static_works_CXX=${lt_cv_prog_compiler_static_works_CXX=no}
+lt_cv_prog_gnu_ld=${lt_cv_prog_gnu_ld=yes}
+lt_cv_prog_gnu_ldcxx=${lt_cv_prog_gnu_ldcxx=yes}
+lt_cv_sys_global_symbol_pipe=${lt_cv_sys_global_symbol_pipe=}
+test "${lt_cv_sys_global_symbol_to_c_name_address+set}" = set || lt_cv_sys_global_symbol_to_c_name_address='sed -n -e '\''s/^: \([^ ]*\) $/  {\"\1\", (void *) 0},/p'\'' -e '\''s/^[ABCDGIRSTW]* \([^ ]*\) \([^ ]*\)$/  {"\2", (void *) \&\2},/p'\'''
+test "${lt_cv_sys_global_symbol_to_c_name_address_lib_prefix+set}" = set || lt_cv_sys_global_symbol_to_c_name_address_lib_prefix='sed -n -e '\''s/^: \([^ ]*\) $/  {\"\1\", (void *) 0},/p'\'' -e '\''s/^[ABCDGIRSTW]* \([^ ]*\) \(lib[^ ]*\)$/  {"\2", (void *) \&\2},/p'\'' -e '\''s/^[ABCDGIRSTW]* \([^ ]*\) \([^ ]*\)$/  {"lib\2", (void *) \&\2},/p'\'''
+lt_cv_sys_global_symbol_to_cdecl=${lt_cv_sys_global_symbol_to_cdecl=}
+lt_cv_sys_max_cmd_len=${lt_cv_sys_max_cmd_len=1572864}

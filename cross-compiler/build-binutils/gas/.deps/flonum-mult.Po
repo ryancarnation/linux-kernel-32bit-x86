@@ -1,0 +1,9 @@
+flonum-mult.o: ../../src/binutils-2.44/gas/flonum-mult.c \
+ /usr/include/stdc-predef.h \
+ ../../src/binutils-2.44/gas/../include/ansidecl.h \
+ ../../src/binutils-2.44/gas/flonum.h \
+ ../../src/binutils-2.44/gas/bignum.h
+/usr/include/stdc-predef.h:
+../../src/binutils-2.44/gas/../include/ansidecl.h:
+../../src/binutils-2.44/gas/flonum.h:
+../../src/binutils-2.44/gas/bignum.h:

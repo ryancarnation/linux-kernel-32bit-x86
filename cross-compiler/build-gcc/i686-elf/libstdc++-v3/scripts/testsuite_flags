@@ -1,0 +1,96 @@
+#!/bin/sh
+
+#
+# This script computes the various flags needed to run GNU C++ testsuites
+# (compiler specific as well as library specific). 
+#
+# Written by Benjamin Kosnik <bkoz@redhat.com>
+#            Gabriel Dos Reis <gdr@codesourcery.com>
+#
+
+# Print a message saying how this script is intended to be invoked
+print_usage() {
+    cat <<EOF
+Usage: 
+    testsuite_flags --install-includes
+		    --build-includes
+		    --build-cxx
+		    --build-cc
+		    --install-cxx
+		    --cxxflags
+		    --cxxldflags
+		    --cxxpchflags
+		    --cxxvtvflags
+
+EOF
+}
+
+# Establish configure-generated directory structure.
+BUILD_DIR=/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/i686-elf/libstdc++-v3
+SRC_DIR=/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/src/gcc-14.2.0/libstdc++-v3
+PREFIX_DIR=/home/rcarnation/opt/cross
+query=$1
+
+case ${query} in
+    --install-includes)
+      INCLUDES="-I${SRC_DIR}/testsuite/util"
+      echo ${INCLUDES}
+      ;;
+    --build-includes)
+      INCLUDES="-nostdinc++ -I/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/i686-elf/libstdc++-v3/include/i686-elf -I/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/i686-elf/libstdc++-v3/include -I/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/src/gcc-14.2.0/libstdc++-v3/libsupc++ 
+                -I${SRC_DIR}/include/backward -I${SRC_DIR}/testsuite/util"
+      echo ${INCLUDES}
+      ;;
+    --install-cxx)
+      CXX=${PREFIX_DIR}/bin/g++
+      echo ${CXX}
+      ;;
+    --build-cxx)
+      CXX_build=" /home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/./gcc/xgcc -shared-libgcc -B/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/./gcc -nostdinc++ -L/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/i686-elf/libstdc++-v3/src -L/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/i686-elf/libstdc++-v3/src/.libs -L/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/i686-elf/libstdc++-v3/libsupc++/.libs -B/home/rcarnation/opt/cross/i686-elf/bin/ -B/home/rcarnation/opt/cross/i686-elf/lib/ -isystem /home/rcarnation/opt/cross/i686-elf/include -isystem /home/rcarnation/opt/cross/i686-elf/sys-include   "
+      CXX=`echo "$CXX_build" | sed 's,gcc/xgcc ,gcc/xg++ ,'`
+      echo ${CXX}
+      ;;
+    --build-cc)
+      CC_build=" /home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/./gcc/xgcc -B/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/./gcc/ -B/home/rcarnation/opt/cross/i686-elf/bin/ -B/home/rcarnation/opt/cross/i686-elf/lib/ -isystem /home/rcarnation/opt/cross/i686-elf/include -isystem /home/rcarnation/opt/cross/i686-elf/sys-include   "
+      CC="$CC_build"
+      echo ${CC}
+      ;;
+    --cxxflags)
+      CXXFLAGS_default="-fmessage-length=0 -fno-show-column"
+      CXXFLAGS_config="-ffunction-sections -fdata-sections  "
+      echo ${CXXFLAGS_default} ${CXXFLAGS_config} 
+      ;;
+    --cxxvtvflags)
+      CXXFLAGS_vtv=""
+      LDFLAGS_vtv=""
+      echo ${CXXFLAGS_vtv} ${LDFLAGS_vtv}
+      ;;
+    --cxxparallelflags)
+      CXXFLAGS_parallel="-D_GLIBCXX_PARALLEL -fopenmp
+			 -B${BUILD_DIR}/../libgomp 
+                         -I${BUILD_DIR}/../libgomp 
+			 -L${BUILD_DIR}/../libgomp/.libs -lgomp"
+      echo ${CXXFLAGS_parallel}
+      ;;
+    --cxxpchflags)
+      PCHFLAGS=""
+      echo ${PCHFLAGS}
+      ;;
+    --cxxldflags)
+      FS_LDFLAGS=
+      EXP_LDFLAGS=
+      if [ -d ${BUILD_DIR}/src/filesystem/.libs ]; then
+        FS_LDFLAGS=-L${BUILD_DIR}/src/filesystem/.libs
+      fi
+      if [ -d ${BUILD_DIR}/src/experimental/.libs ]; then
+        EXP_LDFLAGS=-L${BUILD_DIR}/src/experimental/.libs
+      fi
+      SECTIONLDFLAGS="  $FS_LDFLAGS $EXP_LDFLAGS"
+      echo ${SECTIONLDFLAGS}
+      ;;
+    *)
+      print_usage
+      ;;
+esac
+
+exit 0

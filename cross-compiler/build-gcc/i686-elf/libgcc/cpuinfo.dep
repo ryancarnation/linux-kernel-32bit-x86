@@ -1,0 +1,20 @@
+cpuinfo.o: ../../../src/gcc-14.2.0/libgcc/config/i386/cpuinfo.c \
+ /home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/gcc/include/cpuid.h \
+ ../../../src/gcc-14.2.0/libgcc/../gcc/tsystem.h \
+ /home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/gcc/include/stddef.h \
+ /home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/gcc/include/float.h \
+ ../../../src/gcc-14.2.0/libgcc/../include/filenames.h \
+ ../../../src/gcc-14.2.0/libgcc/../include/hashtab.h \
+ ../../../src/gcc-14.2.0/libgcc/../include/ansidecl.h auto-target.h \
+ ../../../src/gcc-14.2.0/libgcc/../gcc/common/config/i386/i386-cpuinfo.h \
+ ../../../src/gcc-14.2.0/libgcc/../gcc/common/config/i386/cpuinfo.h
+/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/gcc/include/cpuid.h:
+../../../src/gcc-14.2.0/libgcc/../gcc/tsystem.h:
+/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/gcc/include/stddef.h:
+/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/gcc/include/float.h:
+../../../src/gcc-14.2.0/libgcc/../include/filenames.h:
+../../../src/gcc-14.2.0/libgcc/../include/hashtab.h:
+../../../src/gcc-14.2.0/libgcc/../include/ansidecl.h:
+auto-target.h:
+../../../src/gcc-14.2.0/libgcc/../gcc/common/config/i386/i386-cpuinfo.h:
+../../../src/gcc-14.2.0/libgcc/../gcc/common/config/i386/cpuinfo.h:

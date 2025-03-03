@@ -1,0 +1,5 @@
+hardcfr.o: ../../../src/gcc-14.2.0/libgcc/hardcfr.c \
+ /home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/gcc/include/stddef.h \
+ /home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/gcc/include/stdbool.h
+/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/gcc/include/stddef.h:
+/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-gcc/gcc/include/stdbool.h:

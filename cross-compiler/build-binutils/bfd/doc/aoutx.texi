@@ -1,0 +1,1 @@
+/home/rcarnation/projects/linux-kernel-32bit-x86/cross-compiler/build-binutils/bfd/../../src/binutils-2.44/bfd/doc/aoutx.texi
